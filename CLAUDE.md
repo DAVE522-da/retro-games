@@ -35,5 +35,13 @@ Every game follows the same pattern inside a single HTML file:
 ## Git & GitHub
 
 - Remote: `https://github.com/DAVE522-da/retro-games`
-- After every commit, push immediately (`git push`) — no need to ask
 - `.claude/` is gitignored
+
+### Commit discipline
+Commit and push after every meaningful unit of work — a new feature, a bug fix, a new game, a config change. Never batch unrelated changes into one commit. This ensures the project can always be reverted to a known-good state.
+
+Commit message format:
+- One short imperative subject line (e.g. `Add power-up system to shooter`)
+- If needed, a blank line followed by a brief body explaining the why or notable details
+
+Push immediately after every commit (`git push`) — no approval needed.
