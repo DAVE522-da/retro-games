@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-function Header() {
+function Header({ darkMode, onToggleDark }) {
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
@@ -35,6 +35,9 @@ function Header() {
           </form>
           <Link to="/" className="nav-link">Main Page</Link>
           <Link to="/create" className="nav-link">Create Article</Link>
+          <button className="theme-toggle" onClick={onToggleDark} title={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}>
+            {darkMode ? 'Light' : 'Dark'}
+          </button>
         </nav>
       </div>
     </header>
