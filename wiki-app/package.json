@@ -1,0 +1,19 @@
+{
+  "name": "wiki-app",
+  "version": "1.0.0",
+  "description": "A simple Wikipedia-like app with React and Node.js",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "cd client && npm start",
+    "dev": "start cmd /c \"npm run server\" && timeout /t 3 && start cmd /c \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
